@@ -71,13 +71,18 @@ const routes: Routes = [
     path: 'super-analytics',
     loadChildren: () => import('./super-analytics/super-analytics.module').then( m => m.SuperAnalyticsPageModule)
   },
-  {
-    path: 'view-modal',
-    loadChildren: () => import('./view-modal/view-modal.module').then( m => m.ViewModalPageModule)
-  },
+  
   {
     path: 'view-students',
     loadChildren: () => import('./view-students/view-students.module').then( m => m.ViewStudentsPageModule)
+  },
+  {
+    path: 'component',
+    loadChildren: () => import('./component/component.module').then( m => m.ComponentPageModule)
+  },
+  {
+    path: 'manage-announcements',
+    loadChildren: () => import('./manage-announcements/manage-announcements.module').then( m => m.ManageAnnouncementsPageModule)
   },
 ];
 

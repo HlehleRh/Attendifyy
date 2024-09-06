@@ -1,20 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-
 import { IonicModule } from '@ionic/angular';
-
-import { ViewModalPageRoutingModule } from './view-modal-routing.module';
-
-import { ViewModalPage } from './view-modal.page';
+import { FormsModule } from '@angular/forms';
+import { ViewModalComponent } from './view-modal.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
     IonicModule,
-    ViewModalPageRoutingModule
+    FormsModule
   ],
-  declarations: [ViewModalPage]
+  declarations: [ViewModalComponent],
+  exports: [ViewModalComponent]
 })
-export class ViewModalPageModule {}
+export class ViewModalModule { }

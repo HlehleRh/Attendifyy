@@ -1,12 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { ViewModalPage } from './view-modal.page';
+import { ComponentPage } from './component.page';
 
-describe('ViewModalPage', () => {
-  let component: ViewModalPage;
-  let fixture: ComponentFixture<ViewModalPage>;
+describe('ComponentPage', () => {
+  let component: ComponentPage;
+  let fixture: ComponentFixture<ComponentPage>;
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ViewModalPage);
+    fixture = TestBed.createComponent(ComponentPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

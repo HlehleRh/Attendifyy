@@ -1,0 +1,72 @@
+/* Style for ion-header and ion-toolbar */
+ion-header {
+    --background: #ff9800;/* Updated header background color */
+  }
+  
+  ion-toolbar {
+    --background-color: #d9a544; /* Updated toolbar background color */
+   
+  }
+  .custom-title {
+    color: #ffffff; /* Title text color set to white */
+    text-align: center; /* Center align title text */
+  }
+  
+  ion-content {
+    --background: #6d3735; /* Page background color */
+  }
+  
+  /* Style for ion-card */
+  ion-card {
+    color: #267e98; /* Text color within the card */
+    margin: 16px; /* Margin around the card */
+  }
+  
+  /* Style for ion-card-header */
+  ion-card-header {
+    background-color: #d9a544; /* Match the card background color */
+  }
+  
+  /* Style for ion-card-title */
+  ion-card-title {
+    color: #ffffff; /* Title color */
+  }
+  
+  /* Style for ion-input, ion-textarea, and ion-select */
+  ion-input, ion-textarea, ion-select {
+    --background: #ffffff; /* White background for input fields and select */
+    color:black; /* Text color for input fields and select */
+    margin-bottom: 16px; /* Margin below input fields */
+  }
+  
+  /* Style for ion-button */
+  ion-button {
+    background-color: #00546f; /* Background color for buttons */
+    color: #ffffff; /* Text color for buttons */
+    margin-top: 8px; /* Margin above buttons */
+  }
+  
+  /* Style for ion-list */
+  ion-list {
+    margin: 16px; /* Margin around the list */
+  }
+  
+  /* Style for ion-item */
+  ion-item {
+    color: #267e98; /* Text color for list items */
+    border-radius: 8px; /* Rounded corners for items */
+    margin-bottom: 8px; /* Margin between items */
+  }
+  
+  /* Style for delete button in ion-item */
+  ion-button[fill="outline"] {
+    --background: transparent; /* No background for outline button */
+    --border-color: #00546f; /* Border color for outline button */
+    color: #00546f; /* Text color for outline button */
+  }
+  
+  /* Style for ion-icon */
+  ion-icon {
+    color: #ffffff; /* Icon color for better visibility on dark background */
+  }
+  

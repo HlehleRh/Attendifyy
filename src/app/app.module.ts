@@ -8,7 +8,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { environment } from '../environments/environment';
-//import { ViewModalModule } from './view-modal/view-modal.module';
+import { ViewModalModule } from './view-modal/view-modal.module';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
@@ -21,7 +21,7 @@ import { FormsModule } from '@angular/forms';
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    //ViewModalModule,
+    ViewModalModule,
    
   ],
   providers: [

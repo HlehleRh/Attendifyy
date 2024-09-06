@@ -25,3 +25,46 @@
 #container a {
   text-decoration: none;
 }
+ion-card-title {
+  color: var(--ion-color-primary);
+}
+
+ion-card {
+  margin-bottom: 20px;
+}
+
+ion-grid {
+  margin-top: 20px;
+}
+
+ion-button {
+  --background: var(--ion-color-primary);
+}
+#container {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f8f9fa; /* Light background color */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#container strong {
+  font-size: 1.2rem;
+  color: var(--ion-color-primary);
+}
+
+#container p {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+#container a {
+  color: var(--ion-color-secondary);
+  text-decoration: none;
+}
+
+#container a:hover {
+  text-decoration: underline;
+}
