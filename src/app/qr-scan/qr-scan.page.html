@@ -1,24 +1,38 @@
-<ion-content [fullscreen]="true">
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon class="back-button" name="arrow-back-outline" routerLink="/lecture"></ion-icon>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+</ion-header>
 
-  <ion-card>
-    <ion-card-content class="ion-text-center">
-      <ion-input [(ngModel)]="qrCodeText" placeholder="QR Code Text" readonly></ion-input>
-    </ion-card-content>
-  </ion-card>
-  <br>
-  <br>
-  <br>
-  <br>
-  
- 
-  
-  
-  <div class="centered-content"> <!-- Apply the CSS class to center content -->
-    <img [src]="qrCodeDataUrl" *ngIf="qrCodeDataUrl" alt="QR Code">
-    <br>
-    <br>
-    <br>
-    <br>
-    <ion-button (click)="generateQRCode()" class="colser">Generate  <ion-icon name="qr-code-outline" class="hude"></ion-icon> QR Code</ion-button>
+<ion-content [fullscreen]="true" class="qr-code-content">
+  <div class="container">
+    <ion-card class="qr-input-card">
+      <ion-card-content>
+        <ion-label class="input-label">QR Code Text</ion-label>
+        <ion-input 
+          [(ngModel)]="qrCodeText" 
+          placeholder="Your QR code text will appear here" 
+          readonly
+          class="qr-input"
+        ></ion-input>
+      </ion-card-content>
+    </ion-card>
+
+    <div class="qr-display-section">
+      <div class="qr-code-container" *ngIf="qrCodeDataUrl">
+        <img [src]="qrCodeDataUrl" alt="QR Code" class="qr-image">
+      </div>
+      
+      <ion-button (click)="generateQRCode()" class="generate-button">
+        <span class="button-content">
+          Generate
+          <ion-icon name="qr-code-outline" class="qr-icon"></ion-icon>
+          QR Code
+        </span>
+      </ion-button>
+    </div>
   </div>
 </ion-content>
